@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Weather Dashboard</h1>
+        
+        <!-- Search Bar -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="cityInput" placeholder="Enter city name" aria-label="City name">
+            <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+        </div>
+        
+        <!-- Temperature Unit Toggle -->
+        <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="unitToggle">
+            <label class="form-check-label" for="unitToggle">Switch to Fahrenheit</label>
+        </div>
+
+        <!-- Add to Favorites Button -->
+        <button class="btn btn-success mb-3" type="button" id="addFavoriteButton">Add to Favorites</button>
+
+        <!-- Favorite Cities Display -->
+        <div id="favoritesList" class="mb-4"></div>
+        
+        <!-- Weather Data Display -->
+        <div id="weatherData" class="row"></div>
+        
+        <!-- 5-day Forecast Display -->
+        <div id="forecastData" class="row mt-4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
